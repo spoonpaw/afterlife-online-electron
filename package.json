@@ -2,11 +2,13 @@
   "name": "afterlife",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "dist/main.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=dev electron .",
-    "start-prod": "cross-env NODE_ENV=prod electron .",
-    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --electron-version=25.0.1 --prune=true --out=out --icon=icon.icns"
+    "start": "npm run build:dev && electron .",
+    "start-prod": "npm run build:prod && electron .",
+    "build:dev": "cross-env NODE_ENV=dev tsc",
+    "build:prod": "cross-env NODE_ENV=prod tsc",
+    "package-mac": "npm run build:prod && electron-packager . --overwrite --platform=darwin --arch=x64 --electron-version=25.0.1 --prune=true --out=out --icon=icon.icns"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,9 @@
   "devDependencies": {
     "cross-env": "^7.0.3",
     "electron": "25.0.1",
-    "electron-packager": "^17.1.1"
+    "electron-packager": "^17.1.1",
+    "typescript": "^4.1.3",
+    "@types/node": "^14.14.31",
+    "ts-node": "^9.1.1"
   }
 }
