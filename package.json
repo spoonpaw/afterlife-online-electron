@@ -1,0 +1,19 @@
+{
+  "name": "afterlife",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=dev electron .",
+    "start-prod": "cross-env NODE_ENV=prod electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --electron-version=25.0.1 --prune=true --out=out --icon=icon.icns"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "25.0.1",
+    "electron-packager": "^17.1.1"
+  }
+}
