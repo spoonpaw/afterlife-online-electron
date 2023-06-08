@@ -9,11 +9,14 @@ function createWindow() {
             nodeIntegration: true,
         },
         icon: path.join(__dirname, 'icon.icns')
-    })
+    });
+
+    win.setMenuBarVisibility(false); // or use win.removeMenu();
+
 
     // Change the URL based on the environment variable
     const url = process.env.NODE_ENV === 'dev' ? 'http://localhost:3000' : 'https://typescript-multiplayer-rpg.herokuapp.com/';
-    win.loadURL(url)
+    win.loadURL(url);
 }
 
-app.whenReady().then(createWindow)
+app.whenReady().then(createWindow);

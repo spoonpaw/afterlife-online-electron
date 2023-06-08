@@ -8,7 +8,9 @@
     "start-prod": "npm run build:prod && electron .",
     "build:dev": "cross-env NODE_ENV=dev tsc",
     "build:prod": "cross-env NODE_ENV=prod tsc",
-    "package-mac": "npm run build:prod && electron-packager . --overwrite --platform=darwin --arch=x64 --electron-version=25.0.1 --prune=true --out=out --icon=icon.icns"
+    "package-mac": "npm run build:prod && electron-packager . --overwrite --platform=darwin --arch=x64 --electron-version=25.0.1 --prune=true --out=out --icon=icon.icns",
+    "package-ubuntu": "npm run build:prod && electron-packager . --overwrite --platform=linux --arch=x64 --electron-version=25.0.1 --prune=true --out=out --icon=icon.png"
+
   },
   "keywords": [],
   "author": "",
