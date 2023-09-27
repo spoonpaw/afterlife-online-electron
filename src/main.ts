@@ -8,7 +8,9 @@ function createWindow() {
         webPreferences: {
             nodeIntegration: true,
         },
-        icon: path.join(__dirname, 'icon.icns')
+        icon: path.join(__dirname, '../icons/icons/png/256x256.png')
+
+
     });
 
     win.setMenuBarVisibility(false); // or use win.removeMenu();
