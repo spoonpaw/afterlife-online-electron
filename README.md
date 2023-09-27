@@ -1,7 +1,7 @@
 # Afterlife Online Electron Client
 
 ## Description
-This project is a simple Electron client that allows users to connect and play Afterlife Online.
+This project is a simple Electron client that allows users to connect and play Afterlife Online. You can also play the game online at [this link](https://typescript-multiplayer-rpg.herokuapp.com/).
 
 ## Prerequisites
 - Node.js (v14.x.x or higher recommended)
@@ -24,6 +24,11 @@ To run the production build: npm run start-prod
 - For macOS: npm run package-mac
 - For Ubuntu: npm run package-ubuntu
 - For Windows: npm run package-windows
+
+## Downloads
+- [Windows Release](https://github.com/spoonpaw/afterlife-online-electron/releases/download/v1.0.0/afterlife-win32-x64.zip)
+- [Mac Release](https://github.com/spoonpaw/afterlife-online-electron/releases/download/v1.0.0/afterlife-darwin-x64.zip)
+- [Ubuntu Release](https://github.com/spoonpaw/afterlife-online-electron/releases/download/v1.0.0/afterlife-linux-x64.zip)
 
 ## Features
 - Connect to a local or remote Afterlife Online game server
