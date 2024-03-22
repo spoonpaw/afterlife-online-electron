@@ -45,6 +45,3 @@ This project is currently at version 1.0.0.
 - Cross-env: 7.0.3
 - @types/node: 14.18.48
 - ts-node: 9.1.1
-
-## Known Issues
-- The icon might not show up in the menu bar on some operating systems; clearing the cache or packaging the application may resolve this issue.
