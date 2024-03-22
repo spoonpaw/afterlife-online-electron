@@ -13,20 +13,20 @@
     "start-prod": "npm run build:prod && electron .",
     "build:dev": "cross-env NODE_ENV=dev tsc",
     "build:prod": "cross-env NODE_ENV=prod tsc",
-    "package-mac": "npm run build:prod && electron-packager . --overwrite --platform=darwin --arch=x64 --electron-version=25.0.1 --prune=true --out=out --icon=icons/icons/mac/icon.icns",
-    "package-ubuntu": "npm run build:prod && electron-packager . --overwrite --platform=linux --arch=x64 --electron-version=25.0.1 --prune=true --out=out --icon=icons/icons/png/256x256.png",
-    "package-windows": "npm run build:prod && electron-packager . --overwrite --platform=win32 --arch=x64 --electron-version=25.0.1 --prune=true --out=out --icon=icons/icons/win/icon.ico"
+    "package-mac": "npm run build:prod && electron-packager . --overwrite --platform=darwin --arch=x64 --electron-version=29.1.5 --prune=true --out=out --icon=icons/icons/mac/icon.icns",
+    "package-ubuntu": "npm run build:prod && electron-packager . --overwrite --platform=linux --arch=x64 --electron-version=29.1.5 --prune=true --out=out --icon=icons/icons/png/256x256.png",
+    "package-windows": "npm run build:prod && electron-packager . --overwrite --platform=win32 --arch=x64 --electron-version=29.1.5 --prune=true --out=out --icon=icons/icons/win/icon.ico"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "14.18.48",
+    "@types/node": "20.11.30",
     "cross-env": "7.0.3",
-    "electron": "25.8.2",
+    "electron": "29.1.5",
     "electron-icon-maker": "^0.0.5",
     "electron-packager": "17.1.1",
-    "ts-node": "9.1.1",
-    "typescript": "4.9.5"
+    "ts-node": "10.9.2",
+    "typescript": "5.4.3"
   }
 }
